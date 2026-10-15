@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#fff0f7"><title>A Little Surprise for Mansi 💗</title>
+<style>
+:root{--ink:#42324f;--pink:#ffb8d7;--lav:#cbbdff}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;color:var(--ink);font-family:"Trebuchet MS",system-ui,sans-serif;background:linear-gradient(135deg,#fff1f7,#f2efff 55%,#fff8e9);overflow-x:hidden}
+button{border:0;border-radius:999px;padding:12px 20px;min-height:46px;font:700 15px inherit;font-family:inherit;font-weight:800;color:#70476c;background:linear-gradient(135deg,#ffe0ee,#e6ddff);box-shadow:0 7px 18px #b89acb33;cursor:pointer;transition:.2s}button:hover{transform:translateY(-2px)}button:disabled{opacity:.4;cursor:default;transform:none}
+#top{position:sticky;top:0;z-index:5;padding:12px 16px;background:#fffaf4dc;backdrop-filter:blur(12px);border-bottom:1px solid #fff;width:100%}.toprow{max-width:650px;margin:auto;display:flex;justify-content:space-between;gap:8px;align-items:center;font-size:12px;color:#997da8;font-weight:800;letter-spacing:.05em}.track{height:6px;background:#eee3f4;border-radius:99px;max-width:650px;margin:8px auto 0;overflow:hidden}.fill{height:100%;width:10%;background:linear-gradient(90deg,#ff9fc9,#bbaaff);transition:width .4s}
+main{min-height:calc(100vh - 56px);display:flex;align-items:center;justify-content:center;padding:20px 12px 30px}.screen{display:none;width:min(100%,610px);text-align:center}.screen.active{display:block;animation:in .45s ease both}@keyframes in{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+h1,h2{font-family:"Brush Script MT","Segoe Script",cursive;color:#c35f98;margin:8px 0 14px;line-height:1.1}h1{font-size:clamp(44px,10vw,70px)}h2{font-size:clamp(34px,8vw,49px)}p{line-height:1.7;font-size:clamp(15px,4vw,18px);margin:12px auto;max-width:480px}.eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:11px;color:#a78ac3;font-weight:900}
+.coverart{width:min(80%,300px);max-height:250px;object-fit:contain;filter:drop-shadow(0 12px 14px #9f7aa522);animation:bob 3s ease-in-out infinite}@keyframes bob{50%{transform:translateY(-8px)}}
+.poster{position:relative;overflow:hidden;border:3px solid #fff;border-radius:18px;padding:24px 18px 14px;box-shadow:0 18px 50px #8e6e9c22;background:linear-gradient(160deg,var(--bg1),var(--bg2));min-height:560px;display:flex;flex-direction:column;align-items:center}
+.poster:before{content:"";position:absolute;inset:8px;border:1px dashed #ffffffb8;border-radius:18px;pointer-events:none}.poster:after{content:"✦  ♡  ✧";position:absolute;top:16px;right:16px;font-size:20px;color:#fff;opacity:.9}
+.wish-label{position:relative;z-index:1;padding:8px 30px;border-radius:45% 35% 42% 32%;background:linear-gradient(100deg,#ffc8dfd9,#ffdcedd9);font-size:clamp(23px,6vw,31px);font-weight:800;letter-spacing:.01em;color:#39233e;box-shadow:none;font-family:"Trebuchet MS",system-ui,sans-serif;transform:rotate(-2deg)}
+.wish-title{display:none}
+.wish-message{position:relative;z-index:1;font-size:clamp(17px,4.3vw,21px);font-weight:700;line-height:1.5;max-width:460px;margin:20px auto 10px;color:#243b63;font-family:"Trebuchet MS",system-ui,sans-serif;text-wrap:pretty}
+.art-frame{width:100%;flex:1;min-height:210px;display:flex;align-items:center;justify-content:center;position:relative}.art-frame:before{content:"";position:absolute;width:min(65%,230px);aspect-ratio:1;border-radius:50%;background:#ffffff65;filter:blur(2px)}
+.wish-art{position:relative;z-index:1;width:min(96%,390px);height:270px;object-fit:contain;border-radius:16px;filter:drop-shadow(0 12px 12px #8d6a8b25);animation:bob 3.2s ease-in-out infinite;image-rendering:auto}
+.stickers{position:absolute;inset:0;pointer-events:none;color:#fff;font-size:23px}.stickers span{position:absolute;animation:twinkle 2.2s ease-in-out infinite}.stickers span:nth-child(1){left:8%;top:20%}.stickers span:nth-child(2){right:8%;top:43%;animation-delay:.5s}.stickers span:nth-child(3){left:15%;bottom:13%;animation-delay:.8s}.stickers span:nth-child(4){right:16%;bottom:18%;animation-delay:1.1s}@keyframes twinkle{50%{transform:scale(1.25) rotate(12deg);opacity:.6}}
+.dots{display:flex;gap:6px;justify-content:center;margin:13px 0}.dots span{width:7px;height:7px;border-radius:50%;background:#d8c9e7}.dots span.on{background:#df82b3;transform:scale(1.3)}
+.controls{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:18px 0}.small{font-size:12px;color:#9c86a7}
+.envelope{margin:30px auto;width:230px;height:145px;border-radius:12px;background:linear-gradient(135deg,#ffb8d6,#f48bb8);position:relative;box-shadow:0 12px 20px #bc7ca933;cursor:pointer}.envelope:before{content:"";position:absolute;inset:0;background:linear-gradient(145deg,transparent 49%,#ec82b0 50%) left/50% 100% no-repeat,linear-gradient(215deg,transparent 49%,#ffd4e5 50%) right/50% 100% no-repeat}.flap{position:absolute;inset:0 0 auto;height:80px;background:#ffd4e5;clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:top;transition:.7s;z-index:2}.envelope.open .flap{transform:rotateX(180deg)}.seal{position:absolute;z-index:3;left:calc(50% - 22px);top:54px;background:#fff2f8;border:3px solid #ff95c3;border-radius:50%;width:44px;height:44px;display:grid;place-items:center}
+.cake{font-size:115px;cursor:pointer;animation:bob 2s infinite}.gift{font-size:120px;cursor:pointer;animation:bob 2.5s infinite}.letter{max-height:45vh;overflow:auto;background:#fffdfdca;border:1px solid #f4d4e7;border-radius:20px;padding:18px;text-align:left;box-shadow:0 8px 25px #ac88bb1b}.hidden{display:none!important}
+@media(max-width:430px){main{padding:15px 9px 22px}.poster{padding:18px 12px 12px;min-height:490px;border-radius:22px}.wish-art{height:220px}.art-frame{min-height:190px}.wish-message{font-size:17px}.controls button{padding:11px 15px;font-size:14px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
+</style></head>
+<body>
+<header id="top"><div class="toprow"><span>A LITTLE SURPRISE FOR MANSI ♡</span><span id="counter">01 / 10</span><span>✨ SILENT MAGIC</span></div><div class="track"><div class="fill" id="fill"></div></div></header>
+<main>
+<section class="screen active" id="welcome"><div class="eyebrow">a little surprise for</div><h1>Mansi 💗</h1><img class="coverart" src="assets/pose-welcome.png" alt="Dudu and Bubu"><p>Mansi, ye chhoti si website maine tumhare birthday ko special banane ke liye banayi hai. 🥹🎀</p><div class="controls"><button onclick="show('wish',0)">Start the Surprise ✨</button></div><div class="small">Made with love & lots of wishes 💗</div></section>
+<section class="screen" id="wish">
+ <article class="poster" id="poster">
+  <div class="stickers"><span>♡</span><span>✦</span><span>✧</span><span>♡</span></div>
+  <div class="wish-label" id="label">WISH 01</div><h2 class="wish-title" id="title">A little wish for you</h2>
+  <p class="wish-message" id="message"></p>
+  <div class="art-frame"><img class="wish-art" id="art" alt="Dudu and Bubu in a unique birthday pose"></div>
+  <div class="small" id="caption">A little wish, just for you ♡</div>
+ </article>
+ <div class="dots" id="dots"></div>
+ <div class="controls"><button id="back" onclick="step(-1)">← Back</button><button id="next" onclick="step(1)">Next Wish ✨ →</button></div>
+</section>
+<section class="screen" id="cakeScene"><div class="eyebrow">make a little wish</div><h2>Make a Wish, Mansi! ✨</h2><div class="cake" onclick="blow()">🎂</div><p id="cakeText">Cake par tap karke candles blow karo 🎂</p><div class="controls"><button onclick="show('wish',9)">← Back</button><button id="cakeNext" disabled onclick="show('giftScene')">Open Your Gift 🎁</button></div></section>
+<section class="screen" id="giftScene"><div class="eyebrow">one last little surprise</div><h2>A Gift For You 🎀</h2><div class="gift" onclick="openGift()">🎁</div><p id="giftText">Gift par tap karo…</p><div class="controls"><button onclick="show('cakeScene')">← Back</button><button id="giftNext" disabled onclick="show('letter')">Open the Letter 💌</button></div></section>
+<section class="screen" id="letter"><div class="eyebrow">a little note from me</div><h2>Dear Mansi, 💗</h2><img class="coverart" style="max-height:115px" src="assets/pose-letter.png" alt="Dudu and Bubu"><div class="letter"><p>Pata nahi ek chhoti si website kitni happiness de sakti hai, par ise banane ka idea bas itna tha ki tumhara birthday thoda aur special ban sake.</p><p>Tumhari life mein hamesha khushiyan, achhe log aur aise moments aate rahein jinhe yaad karke tum smile karo.</p><p>Hamesha apni smile aur apni achhi wali self ko sambhal kar rakhna. Tumhare dreams poore hon aur aane wala har saal tumhare liye kuch beautiful lekar aaye.</p><p>I hope this little surprise made your day a little brighter. ✨</p><p><b>Happy Birthday, Mansi! 🎂</b><br>Made with love & lots of wishes 💗</p></div><div class="controls"><button onclick="show('giftScene')">← Back</button><button onclick="show('final')">One Last Thing ✨</button></div></section>
+<section class="screen" id="final"><div class="eyebrow">the end… and a new happy memory</div><img class="coverart" src="assets/pose-wave.png" alt="Dudu and Bubu waving"><h1>Happy Birthday, Mansi! 💗</h1><p>Tumhara birthday dher saari khushiyan aur beautiful memories lekar aaye. ✨</p><div class="controls"><button onclick="replayAsk()">Replay the Surprise ↻</button></div><div id="replay" class="hidden">Replay from the beginning?<div class="controls"><button onclick="location.reload()">Yes, replay 💗</button><button onclick="document.getElementById('replay').classList.add('hidden')">Cancel</button></div></div></section>
+</main>
+<script>
+const base='assets/';
+const wishes=[
+{title:'Birthday Happiness',msg:'Happy Birthday, Mansi! Tumhari life khushiyon aur beautiful memories se bhari rahe.',art:'wish1.jpg',bg:['#ffe2ef','#ffd0e6']},
+{title:'Extra Smiles',msg:'Aaj ke din extra smiles aur extra happiness tumhare naam!',art:'wish2.jpg',bg:['#e9e2ff','#cfc5ff']},
+{title:'Stay Just As You Are',msg:'Tumhari ye cute si aur masoom si nature hamesha aise hi bani rahe.',art:'wish3.jpg',bg:['#fff0f4','#ffd5e1']},
+{title:'Little Joys',msg:'Dua hai tumhe roz koi na koi chhoti si baat khush kar de.',art:'wish4.jpg',bg:['#dff3ff','#c6e6ff']},
+{title:'Your Lovely Quality',msg:'Tum achhi ho, aur tumhari achhai tumhari ek lovely quality hai. Hamesha aise hi rehna!',art:'wish5.jpg',bg:['#f1e5ff','#e2d3ff']},
+{title:'Birthday Girl',msg:'Birthday girl, smile karna mat bhoolna! Aaj toh smile karne ke extra reasons hain.',art:'wish6.jpg',bg:['#fff0c9','#ffe0a0']},
+{title:'Dreams Come True',msg:'Tumhare saare achhe dreams poore hon aur har naya din kuch achha lekar aaye.',art:'wish7.jpg',bg:['#dff7eb','#c6efdc']},
+{title:'Enjoy Every Moment',msg:'Aaj saari tension side mein! Cake khao, enjoy karo aur khoob saari memories banao.',art:'wish8.jpg',bg:['#ffe6dc','#ffd0c3']},
+{title:'Always Be Yourself',msg:'Life mein kitne bhi changes aayein, apni achhi wali self ko kabhi mat khona.',art:'wish9.jpg',bg:['#e6e8ff','#cdd3ff']},
+{title:'A Beautiful New Year',msg:'Happy Birthday, Mansi! Tumhara ye naya year dher saari happiness aur unexpected achhe surprises lekar aaye.',art:'wish10.jpg',bg:['#ffe0ee','#ffc6dc']}
+];
+let current=0;
+function show(id,n){document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));document.getElementById(id).classList.add('active');if(id==='wish'&&Number.isInteger(n)){current=n;render()}let idx=id==='welcome'?0:id==='wish'?current+1:id==='cakeScene'?11:id==='giftScene'?12:id==='letter'?13:14;document.getElementById('counter').textContent=String(Math.min(idx,14)).padStart(2,'0')+' / 14';document.getElementById('fill').style.width=(Math.min(idx,14)/14*100)+'%';window.scrollTo({top:0,behavior:'smooth'});try{localStorage.setItem('mansiPosterScene',id);localStorage.setItem('mansiPosterWish',String(current))}catch(e){}}
+function render(){const w=wishes[current];document.getElementById('label').textContent='WISH '+String(current+1).padStart(2,'0');document.getElementById('title').textContent="";document.getElementById('message').textContent=w.msg;document.getElementById('art').src=base+w.art;document.getElementById('art').onerror=()=>{document.getElementById('art').alt='Dudu and Bubu illustration could not be loaded';document.getElementById('art').style.display='none'};document.getElementById('art').onload=()=>{document.getElementById('art').style.display='block'};document.getElementById('poster').style.setProperty('--bg1',w.bg[0]);document.getElementById('poster').style.setProperty('--bg2',w.bg[1]);document.getElementById('back').disabled=current===0;document.getElementById('next').textContent=current===9?'Celebrate with Cake 🎂 →':'Next Wish ✨ →';document.getElementById('dots').innerHTML=wishes.map((_,i)=>`<span class="${i===current?'on':''}"></span>`).join('');}
+function step(d){if(d<0){if(current===0)show('welcome');else show('wish',current-1)}else if(current===9)show('cakeScene');else show('wish',current+1)}
+function blow(){document.getElementById('cakeText').textContent='Yay! Wish made! May all your good dreams come true 💗';document.getElementById('cakeNext').disabled=false;confetti()}
+function openGift(){document.getElementById('giftText').textContent='A little letter is waiting for you 💌';document.getElementById('giftNext').disabled=false;confetti()}
+function replayAsk(){document.getElementById('replay').classList.remove('hidden')}
+function confetti(){for(let i=0;i<25;i++){const s=document.createElement('span');s.textContent=['♡','✦','✨','🎉'][i%4];s.style.cssText=`position:fixed;left:${Math.random()*100}vw;top:${Math.random()*55+20}vh;font-size:${14+Math.random()*16}px;pointer-events:none;z-index:10;animation:in 1.3s ease-out forwards`;document.body.appendChild(s);setTimeout(()=>s.remove(),1400)}}
+render();
+</script></body></html>
